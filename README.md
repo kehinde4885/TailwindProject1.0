@@ -1,2 +1,2 @@
-# TailwindProject1.0
+# TailwindProject 1.0
 My First Tailwind Project
