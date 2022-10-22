@@ -8,171 +8,175 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Inner</title>
 </head>
-<body>
-    <header>
+<body class="grid grid-cols-[repeat(20,1fr)] text-dark-wood font-display text-[62.5%]">
+    <header class="col-[14_/_span_14] col-start-4 flex justify-between">
         <div>
-            <img src="/images/logo-inner.svg" alt="">
+            <img class="h-4/5" src="/images/logo-inner.svg" alt="">
         </div>
         <div>
-            <img src="/images/shopping-cart.svg" alt="">
+            <img class="h-4/5" src="/images/shopping-cart.svg" alt="">
         </div>
     </header>
 
-    <main>
-        <section>
-            <div>
-                <h3>LOS ANGELES, CA</h3>
-                <h1>Elegantly refined interior design</h1>
+    <main class="col-[14_/_span_14] col-start-4">
+        <section class="grid grid-cols-2">
+            <div class="col-start-1">
+                <h3 class="w-max text-[80%] tracking-[.3em] font-second">LOS ANGELES, CA</h3>
+                <h1 class="text-6xl w-[11ch]">Elegantly refined 
+                    <span></span>interior design</h1>
                 <div>
-                    <button>GET IN TOUCH</button>
-                    <button>ABOUT US</button>
+                    <button class="font-second py-4 px-4 text-xs text-white bg-dark-wood tracking-[.3em]"> GET IN TOUCH</button>
+                    <button class="font-second p-4 text-xs tracking-[.3em] border-b border-solid"> ABOUT US </button>
                 </div>
             </div>
-            <div>
-                <img src="/images/0-01.jpg" alt="">
-                <img src="/images/img-header-01.jpg" alt="">
-                <img src="/images/img-header-03.jpg" alt="">
+            <div class="col-start-2 relative flex">
+                <img class="w-3/12 absolute right-0 top-1/4" src="/images/img-header-03.jpg" alt="">
+                <img class="w-10/12 z-[0]" src="/images/0-01.jpg" alt="">
+                <img class="w-3/12 absolute z-[1] rounded-t-full self-end -left-[17%] bottom-[10%]" src="/images/img-header-01.jpg" alt="">
             </div>
 
         </section>
 
         <section>
-            <h3>PRESENTATION</h3>
-            <p>A creative template highly suitable for interior design firms and those who need an easy, 
-                attractive and effective way to share their work with a delightful experience.</p>
+            <h3 class="float-left w-max text-[80%] tracking-[.3em] font-second pr-10">PRESENTATION</h3>
+            <p class="text-6xl">A <span class="italic">creative template</span> highly suitable for interior design firms and those who need an easy, 
+                <span class="italic">attractive</span> and <span class="italic">effective</span> way to share their work with a delightful experience.</p>
         </section>
 
-        <section>
-            <h3>SERVICES</h3>
-            <div>
-                <p>We do it best.</p>
-                <button>LEARN MORE</button>
+        <section class="grid grid-cols-3 gap-x-7">
+            <h3 class="w-max text-[80%] tracking-[.3em] font-second">SERVICES</h3>
+            <div class="flex justify-between col-span-3">
+                <p class="text-6xl">We <span class="italic">do it</span> best.</p>
+                <button class="font-second py-4 px-4 text-xs text-white bg-dark-wood tracking-[.3em] self-center">LEARN MORE</button>
             </div>
-                <div>
-                    <p>01</p>
-                    <p>Custom Furniture</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,</p>
-                </div>
-                <div>
-                    <p>02</p>
-                    <p>Custom Furniture</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,</p>
-                </div>
-                <div>
-                    <p>03</p>
-                    <p>Custom Furniture</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare,</p>
-                </div>
+            <div class="flex flex-col">
+                <p>01</p>
+                <p class="text-2xl pb-4">Custom Furniture</p>
+                <p class="text-lg font-second text-light-wood font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+            </div>
+            <div class="flex flex-col">
+                <p>02</p>
+                <p class="text-2xl pb-4">Furniture Layouts</p>
+                <p class="text-lg font-second text-light-wood font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+            </div>
+            <div class="flex flex-col">
+                <p>03</p>
+                <p class="text-2xl pb-4">Space Planning</p>
+                <p class="text-lg font-second text-light-wood font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.</p>
+            </div>
         </section>
 
-        <section>
-            <div>
+        <section class="grid grid-cols-5">
+            <div class="col-span-2">
                 <img src="/images/Team-p-500.jpeg" alt="">
             </div>
-            <div>
-                <h3>WHO WE ARE</h3>
-                <h2>Interior Design that matters.</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. 
+            <div class="col-span-3">
+                <h3 class="w-max text-[80%] tracking-[.3em] font-second">WHO WE ARE</h3>
+                <h2 class="col-span-2 text-6xl">Interior <span class="italic">design</span> that matters.</h2>
+                <div class="flex">
+                    <p class="text-lg font-second text-light-wood font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. 
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
+                        Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique.
+                    </p>
+                    <p class="text-lg font-second text-light-wood font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. 
+                        Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
+                        Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique.
+                    </p>
+                </div>
+                <p class="text-lg font-second text-light-wood font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. 
                     Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
                     Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique.
                 </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. 
-                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
-                    Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique.
-                </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. 
-                    Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
-                    Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique.
-                </p>
-                <button>LEARN MORE</button>
+                <button class="font-second py-4 px-4 text-xs text-white bg-dark-wood tracking-[.3em]">LEARN MORE</button>
             </div>
         </section>
 
         <section>
-            <h3>PORTFOLIO</h3>
-            <p>Selected Projects</p>
 
-            <div>
+            <h3 class="w-max text-[80%] tracking-[.3em] font-second">PORTFOLIO</h3>
+            <p class="text-6xl">Selected Projects</p>
+
+            <div class="grid grid-cols-2">
                 <div>
-                    <p>01</p>
-                    <p>Delta Office</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing 
+                    <p class="w-max text-[80%] tracking-[.3em] font-second">01</p>
+                    <p class="text-5xl">Delta Office</p>
+                    <p class="text-lg font-second text-light-wood font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing 
                         praesent velit viverra sit semper lorem eu cursus vel hendrerit elementum morbi curabitur etiam nibh justo, 
                         lorem aliquet donec sed similem lorem ipsum dolor.
                     </p>
-                    <button>VIEW PROJECT</button>
+                    <button class="font-second p-4 text-xs tracking-[.3em] border-b border-solid">VIEW PROJECT</button>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-
+                <div class="col-start-2 relative flex">
+                    <img class="w-10/12 z-[0]" src="/images/img-work-04.jpg" alt="">
+                    <img class="w-4/12 absolute z-[1] rounded-t-full self-end -left-[17%] bottom-[10%]" src="/images/second-img-work-04.jpg" alt="">
                 </div>
             </div>
 
-            <div>
-                <div>
-                    <p>02</p>
-                    <p>Royal Corporate Space</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing 
+            <div class="grid grid-cols-2">
+                <div class="relative flex">
+                    <img class="w-10/12 z-[0]" src="/images/img-work-04.jpg" alt="">
+                    <img class="w-4/12 absolute z-[1] rounded-t-full self-end right-0 bottom-[10%]" src="/images/second-img-work-04.jpg" alt="">
+                </div>
+                <div class="col-start-2">
+                    <p class="w-max text-[80%] tracking-[.3em] font-second">01</p>
+                    <p class="text-5xl">Royal Corporate Space</p>
+                    <p class="text-lg font-second text-light-wood font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing 
                         praesent velit viverra sit semper lorem eu cursus vel hendrerit elementum morbi curabitur etiam nibh justo, 
                         lorem aliquet donec sed similem lorem ipsum dolor.
                     </p>
-                    <button>VIEW PROJECT</button>
+                    <button class="font-second p-4 text-xs tracking-[.3em] border-b border-solid">VIEW PROJECT</button>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-
-                </div>
+                
             </div>
 
-            <div>
+            <div class="grid grid-cols-2">
                 <div>
-                    <p>03</p>
-                    <p>Mext Lounge</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing 
+                    <p class="w-max text-[80%] tracking-[.3em] font-second">01</p>
+                    <p class="text-5xl">Mext Lounge</p>
+                    <p class="text-lg font-second text-light-wood font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing 
                         praesent velit viverra sit semper lorem eu cursus vel hendrerit elementum morbi curabitur etiam nibh justo, 
                         lorem aliquet donec sed similem lorem ipsum dolor.
                     </p>
-                    <button>VIEW PROJECT</button>
+                    <button class="font-second p-4 text-xs tracking-[.3em] border-b border-solid">VIEW PROJECT</button>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div class="col-start-2 relative flex">
+                    <img class="w-10/12 z-[0]" src="/images/img-work-04.jpg" alt="">
+                    <img class="w-4/12 absolute z-[1] rounded-t-full self-end -left-[17%] bottom-[10%]" src="/images/second-img-work-04.jpg" alt="">
                 </div>
             </div>
         </section>
 
-        <section>
-            <div>
-                <img src="" alt=""><img src="" alt="">
+        <section class="grid grid-cols-8 gap-x-8">
+            <div class="flex flex-col justify-around">
+                <img src="images/client-avatar-01.jpg" alt=""><img src="images/client-avatar-07.jpg" alt="">
             </div>
-            <div><img src="" alt=""><img src="" alt=""></div>
-            <div>
-                <p>See what our clients say</p>
-                <p>''Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            <div class="flex flex-col justify-between"><img src="images/client-avatar-10.jpg" alt=""><img src="images/client-avatar-08.jpg" alt=""></div>
+            <div class="col-span-4 pt-40 pb-40">
+                <p class="text-6xl text-center">See what our <span class="italic">clients say</span></p>
+                <p class="font-second text-2xl font-light text-center text-light-wood mt-10 mb-10">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Suspendisse varius enim in eros elementum tristique."
                 </p>
-                <div>
-                    <img src="" alt="">
-                    <p>
-                        <span>Paul Hanks</span>
+                <div class="flex flex-row justify-center mb-10">
+                    <img  class="w-20 rounded-full self-center" src="images/client-avatar-15.jpg" alt="">
+                    <p class="flex flex-col justify-center ml-4 text-light-wood font-second">
+                        <span class="font-bold text-lg">Paul Hanks</span>
                         <span>Company Name</span>
                     </p>
                 </div>
-                <div><img src="/images/left-arrow.svg" alt=""><img src="/images/right-arrow.svg" alt=""></div>
+                <div class="flex justify-center"><img  class="mr-8 w-5" src="/images/left-arrow.svg" alt=""><img class="mr-8 w-5" src="/images/right-arrow.svg" alt=""></div>
             </div>
-            <div><img src="" alt=""><img src="" alt=""></div>
-            <div><img src="" alt=""><img src="" alt=""></div>
+            <div class="flex flex-col justify-between"><img src="images/client-avatar-09.jpg" alt=""><img src="images/client-avatar-06.jpg" alt=""></div>
+            <div class="flex flex-col justify-around"><img src="images/client-avatar-15.jpg" alt=""><img src="images/client-avatar-14.jpg" alt=""></div>
         </section>
 
-        <footer>
-            <div>
+        <footer class="grid grid-cols-6 gap-y-4">
+            <div class="col-span-2">
                 <img src="/images/logo-inner.svg" alt="">
                 <p> The inner template features a clean, minimal
                     and elegant design. Suitablle for any interior design
@@ -213,7 +217,7 @@
                     <li>Password Protected</li>
                 </ul>
             </div>
-            <div>
+            <div class="col-span-2 col-start-5">
                 <p>follow us on instagram</p>
                 <img src="" alt="">
                 <img src="" alt="">
